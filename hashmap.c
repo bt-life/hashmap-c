@@ -87,7 +87,7 @@ hashmap_t hashmap_new(hash_func_t hash_func, cmp_func_t cmp_func, int size, unsi
     if (size <= 2) {
         size = 137;
     }
-    size = get_max_prime(size);  // keep size is prime number to reduce conflict rate
+    size = get_max_prime(size);  // keep size is prime number to reduce probability of conflict 
     hashmap_t hmap = (hashmap_t)malloc(sizeof(*hmap) + size * sizeof(*hmap->buckets));
     if (!hmap) {
         return hmap;
