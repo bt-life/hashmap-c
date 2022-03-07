@@ -1,7 +1,7 @@
 # hashmap-c
 A simple and clean Hashmap implemented in pure ANSI C.
 
-# For test
+## For test
 ```bash
 git clone https://github.com/bt-life/hashmap-c
 cd hashmap-c
